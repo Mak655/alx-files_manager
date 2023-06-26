@@ -7,10 +7,15 @@ class RedisClient {
     this.client.on('error', (error) => {
       console.error('Redis client error:', error);
     });
+
+    this.isReady = false;
+    this.client.on('ready', () => {
+      this.isReady = true;
+    });
   }
 
   isAlive() {
-    return this.client.connected;
+    return this.isReady;
   }
 
   async get(key) {
