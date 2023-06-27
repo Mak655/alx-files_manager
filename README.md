@@ -31,3 +31,4 @@ Create a separate .env file for the tests named .env.test and store the value of
 Run yarn test or npm run test to execute the E2E tests.
 Documentation
 TODO: Generate OpenAPI documentation with apidoc.
+makdem
