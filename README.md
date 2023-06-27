@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 Files Manager
 Coverage Status
 
@@ -31,6 +31,3 @@ Create a separate .env file for the tests named .env.test and store the value of
 Run yarn test or npm run test to execute the E2E tests.
 Documentation
 TODO: Generate OpenAPI documentation with apidoc.
-=======
-# Files manager
->>>>>>> 93bedb16b3d7e07f750cedb439c4f7bb0bd2ff18
