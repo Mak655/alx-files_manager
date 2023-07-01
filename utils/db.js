@@ -8,12 +8,11 @@ class DBClient {
 
     this.client = new MongoClient(
       `mongodb://${host}:${port}`,
-      { useUnifiedTopology: true }
-    );
+      { useUnifiedTopology: true });
     this.database = database;
   }
 
-  async isAlive() {
+  isAlive() {
     return this.client.isConnected();
   }
 
